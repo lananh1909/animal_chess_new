@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" styleClass="mainGameBackground" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.GameController">
+   <children>
+      <GridPane id="map" fx:id="boardGame" alignment="BASELINE_CENTER" layoutX="121.0" layoutY="46.0" onMouseClicked="#addGridEvent" prefHeight="828.0" prefWidth="644.0" stylesheets="@../../bin/game/style.css" AnchorPane.leftAnchor="130.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </GridPane>
+      <AnchorPane id="player2" fx:id="AI" layoutX="901.0" layoutY="57.0" prefHeight="300.0" prefWidth="250.0" style="-fx-opacity: 0.3;" AnchorPane.topAnchor="57.0">
+         <children>
+            <AnchorPane fx:id="AIImage" layoutX="35.0" layoutY="25.0" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: #fff;" />
+            <Text fill="WHITE" layoutX="63.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="King Lion">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="player1" fx:id="player" layoutX="901.0" layoutY="499.0" prefHeight="300.0" prefWidth="250.0" AnchorPane.topAnchor="490.0">
+         <children>
+            <AnchorPane fx:id="playerImage" layoutX="35.0" layoutY="26.0" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: #fff;" />
+            <Text fill="WHITE" layoutX="89.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Circle fill="#ff9900" layoutX="914.0" layoutY="845.0" radius="29.0" stroke="#cc6600" strokeType="INSIDE" strokeWidth="3.0" styleClass="circle" AnchorPane.leftAnchor="875.0" />
+      <Circle fill="#ff9900" layoutX="997.0" layoutY="845.0" radius="29.0" stroke="#cc6600" strokeType="INSIDE" strokeWidth="3.0" styleClass="circle" AnchorPane.leftAnchor="955.0" />
+      <FontAwesomeIconView fill="WHITE" glyphName="FLAG" layoutX="884.0" layoutY="857.0" size="40" text="" AnchorPane.bottomAnchor="35.0" />
+      <Circle fill="#ff9900" layoutX="1075.0" layoutY="845.0" radius="29.0" stroke="#cc6600" strokeType="INSIDE" strokeWidth="3.0" styleClass="circle" AnchorPane.leftAnchor="1035.0" AnchorPane.rightAnchor="27.0" />
+      <FontAwesomeIconView fill="WHITE" glyphName="QUESTION" layoutX="968.0" layoutY="863.0" size="55" text="" AnchorPane.leftAnchor="968.0" />
+      <Circle fill="#ff9900" layoutX="1143.0" layoutY="845.0" radius="29.0" stroke="#cc6600" strokeType="INSIDE" strokeWidth="3.0" styleClass="circle" AnchorPane.leftAnchor="1114.0" />
+      <FontAwesomeIconView fill="WHITE" glyphName="UNDO" layoutX="1044.0" layoutY="861.0" size="45" AnchorPane.rightAnchor="116.3" />
+      <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" layoutX="1123.0" layoutY="865.0" size="50" text="" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="817.0" />
+      <Label id="vs" layoutX="971.0" layoutY="365.0" style="-fx-scale-x: 1.5;" styleClass="vss" text="VS" textFill="RED">
+         <effect>
+            <DropShadow color="WHITE" height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </Label>
+      <Button layoutX="871.0" layoutY="816.0" mnemonicParsing="false" onAction="#surrender" prefHeight="21.0" prefWidth="60.0">
+         <padding>
+            <Insets bottom="-3.0" left="-3.0" right="-3.0" top="-3.0" />
+         </padding>
+      </Button>
+      <Button layoutX="954.0" layoutY="814.0" mnemonicParsing="false" onAction="#instruction" prefHeight="21.0" prefWidth="60.0">
+         <padding>
+            <Insets bottom="-3.0" left="-3.0" right="-3.0" top="-3.0" />
+         </padding>
+      </Button>
+      <Button layoutX="1034.0" layoutY="816.0" mnemonicParsing="false" onAction="#startGame" prefHeight="21.0" prefWidth="60.0">
+         <padding>
+            <Insets bottom="-3.0" left="-3.0" right="-3.0" top="-3.0" />
+         </padding>
+      </Button>
+      <Button layoutX="1114.0" layoutY="814.0" mnemonicParsing="false" onAction="#returnToMainTemplate" prefHeight="21.0" prefWidth="60.0">
+         <padding>
+            <Insets bottom="-3.0" left="-3.0" right="-3.0" top="-3.0" />
+         </padding>
+      </Button>
+   </children>
+</AnchorPane>

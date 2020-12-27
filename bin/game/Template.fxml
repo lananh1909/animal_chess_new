@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="background" prefHeight="900.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.Controller">
+   <children>
+      <Button fx:id="singlePlayer" layoutX="454.0" layoutY="337.0" mnemonicParsing="false" onAction="#singlePlayerSelect" prefHeight="73.0" prefWidth="292.0" text="1 Player" textFill="#83421a">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="twoPlayers" layoutX="467.0" layoutY="450.0" mnemonicParsing="false" text="2 Players" />
+      <Button fx:id="instructionButton" layoutX="454.0" layoutY="572.0" mnemonicParsing="false" onAction="#changeScene" text="Instruction" />
+      <Button fx:id="quitGameButton" layoutX="457.0" layoutY="699.0" mnemonicParsing="false" onAction="#handleQuitGameButton" text="Quit game" />
+      <AnchorPane id="levelSelectPane" fx:id="levelSelectPane" layoutX="-1.0" prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: lightblue; -fx-opacity: 1.0;" stylesheets="@style.css">
+         <children>
+            <Button id="hard" layoutX="480.0" layoutY="403.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="240.0" styleClass="levelButton" text="Hard" />
+            <Button id="medium" layoutX="480.0" layoutY="316.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="240.0" styleClass="levelButton" text="Medium" />
+            <Button id="easy" fx:id="easyButton" layoutX="480.0" layoutY="229.0" mnemonicParsing="false" onAction="#startGame" prefHeight="52.0" prefWidth="240.0" styleClass="levelButton" text="Easy" />
+            <Button id="insane" layoutX="480.0" layoutY="489.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="240.0" styleClass="levelButton" text="Insane" />
+            <Button fx:id="backFromLevelSelect" layoutX="953.0" layoutY="752.0" mnemonicParsing="false" onAction="#backFromLevelSelect" prefHeight="71.0" prefWidth="161.0" styleClass="levelButton" text="Back" />
+            <Button id="impossible" layoutX="480.0" layoutY="579.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="240.0" styleClass="levelButton" text="Impossible" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

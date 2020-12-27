@@ -1,0 +1,150 @@
+#background {
+	-fx-background-image: url("/image/background.png");
+	-fx-background-repeat: no-repeat;
+  	-fx-background-size: 100%;
+}
+.button{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-size: 45px;
+    -fx-text-fill: #412913;
+    -fx-font-weight: bold;
+    -fx-opacity: 0.85;
+    -fx-font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.button:pressed {
+	-fx-text-fill: #f7f7f7;
+    -fx-opacity: 1.0;
+}
+
+.button:hover {
+	-fx-cursor: hand;
+	-fx-scale-x: 108%;
+	-fx-scale-y: 108%;
+
+}
+
+#levelSelectPane {
+	-fx-background-image: url("/image/LevelSelect.png");
+	-fx-background-repeat: no-repeat;
+  	-fx-background-size: 100%;
+}
+
+.levelButton {
+	-fx-opacity: 1.0;
+	-fx-font-size: 35px;
+	-fx-background-radius: 50px;
+}
+
+#map {
+	-fx-background-color: #fff;
+}
+
+.mainGameBackground {
+	-fx-background-image: url("/image/background2.jpg");
+}
+
+#easy {
+	-fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000;
+}
+
+#medium {
+	-fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #ffe680 45%, #ffcc00 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000;
+}
+
+#hard {
+	-fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #ff704d 45%, #ff3300 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000;
+}
+
+#insane {
+	-fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #ff80ff 45%, #ff00ff 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000;
+}
+
+#impossible {
+	-fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #3385ff 45%, #0066ff 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000;
+}
+
+#easy:hover {
+	-fx-text-fill: #f7f7f7;
+	-fx-scale-x: 1.1;
+}
+#medium:hover {
+	-fx-text-fill: #f7f7f7;
+}
+#hard:hover {
+	-fx-text-fill: #f7f7f7;
+}
+#insane:hover {
+	-fx-text-fill: #f7f7f7;
+}
+#impossible:hover {
+	-fx-text-fill: #f7f7f7;
+}
+
+.imgView {
+	-fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00);
+}
+
+#player2 {
+	-fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #ff704d 45%, #ff3300 50%);
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000;
+}
+
+#player1 {
+	-fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #1a53ff 45%, #0033cc 50%);
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000;
+}
+
+#vs {
+	-fx-font-size: 80px;
+	-fx-font-weight: bold;
+	-fx-font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.circle:hover {
+	-fx-cursor: hand;
+	-fx-scale-x: 108%;
+	-fx-scale-y: 108%;
+}
